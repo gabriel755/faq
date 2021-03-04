@@ -2,18 +2,16 @@
 <body>
     <%- include ("partials/navbar.ejs"); %>
     <div class="container">
-        <hr>
+        <br>
         <h1><%= pergunta.titulo %></h1>
+        <p>Nome da Empresa: <%= pergunta.empresa %></p>
+        <hr>
+        <h5>Descrição:</h5>
         <p><%= pergunta.descricao %></p>
+
         <hr>
-        <form method="POST" action="/responder">
-            <h3>Responda</h3>
-            <label for="">Resposta:</label>
-            <textarea name="corpo" placeholder="Digite sua resposta aqui!" id="" cols="30" rows="10" class="form-control"></textarea><br>
-            <input type="hidden" name="pergunta" value="<%= pergunta.id %>">
-            <button class="btn btn-primary" type="submit">Responder</button>
-        </form>
-        <hr>
+        <br>
+        <br>
         <h3>Respostas:</h3>
         <hr>
         <% respostas.forEach(resposta => { %>
@@ -23,6 +21,15 @@
                 </div>
             </div>
        <% }) %>
+       <br><br><br><br>
+       <hr>
+       <form method="POST" action="/responder">
+            <h3>Responda</h3>
+            <label for="">Resposta:</label>
+            <textarea name="corpo" placeholder="Digite sua resposta aqui!" id="" cols="30" rows="10" class="form-control"></textarea><br>
+            <input type="hidden" name="pergunta" value="<%= pergunta.id %>">
+            <button class="btn btn-primary" type="submit">Responder</button>
+      </form>
     </div>
 </body>
 <%- include ("partials/footer.ejs"); %>

@@ -39,12 +39,16 @@ app.get("/",(req, res) => {
 app.get("/perguntar",(req, res) => {
     res.render("perguntar");
 })
+
+
 app.post("/salvarpergunta",(req, res) => {
     var titulo = req.body.titulo;
     var descricao = req.body.descricao;
+    var empresa = req.body.empresa;
     Pergunta.create({
         titulo: titulo,
-        descricao: descricao
+        descricao: descricao,
+        empresa: empresa
     }).then(() => {
         res.redirect("/");
     })

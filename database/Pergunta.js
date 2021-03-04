@@ -9,7 +9,11 @@ const Pergunta = connection.define('pergunta',{
     descricao:{
         type: sequelize.TEXT,
         allowNull: false
-    }
+    },
+     empresa:{
+         type: sequelize.STRING,
+         allowNull: false
+     }
 });
 
 Pergunta.sync({force:false}).then(() => {});
