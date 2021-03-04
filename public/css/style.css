@@ -5,3 +5,15 @@ body{
 #formulario-pergunta{
     margin-top: 5vh;
 }
+
+.fixarRodape {
+        bottom: 0;
+        position: fixed;
+        width: 90%;
+        text-align: center;
+        
+    }
+.container-footer{
+    text-decoration: none;
+    color: gray;
+}
