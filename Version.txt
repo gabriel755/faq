@@ -1,0 +1,13 @@
+Version 1.0.
+-----------------------------
+Área de perguntas.
+Ajuste do botões para responder e visualizar.
+Tela de visualização de respostas.
+Tela inicial com perguntas
+-----------------------------
+Version 1.0.1.
+-----------------------------
+Alteração de menu de navegação.
+Inclusão do botão de documentação.
+Inclusão do campo de Nome da Empresa na pergunta.
+-----------------------------
