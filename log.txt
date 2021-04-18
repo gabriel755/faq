@@ -1,0 +1,17 @@
+Server is been started!
+Executing (default): SELECT 1+1 AS result
+Executing (default): CREATE TABLE IF NOT EXISTS `pergunta` (`id` INTEGER NOT NULL auto_increment , `titulo` VARCHAR(255) NOT NULL, `descricao` TEXT NOT NULL, `empresa` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+Conexão efetuada!
+Executing (default): CREATE TABLE IF NOT EXISTS `resposta` (`id` INTEGER NOT NULL auto_increment , `corpo` TEXT NOT NULL, `pergunta_id` INTEGER NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+Executing (default): SHOW INDEX FROM `pergunta`
+Executing (default): SHOW INDEX FROM `resposta`
+Executing (default): SELECT `id`, `titulo`, `descricao`, `empresa`, `createdAt`, `updatedAt` FROM `pergunta` AS `pergunta` ORDER BY `pergunta`.`id` DESC;
+Executing (default): SELECT `id`, `titulo`, `descricao`, `empresa`, `createdAt`, `updatedAt` FROM `pergunta` AS `pergunta` ORDER BY `pergunta`.`id` DESC;
+Executing (default): SELECT `id`, `titulo`, `descricao`, `empresa`, `createdAt`, `updatedAt` FROM `pergunta` AS `pergunta` ORDER BY `pergunta`.`id` DESC;
+Executing (default): SELECT `id`, `titulo`, `descricao`, `empresa`, `createdAt`, `updatedAt` FROM `pergunta` AS `pergunta` ORDER BY `pergunta`.`id` DESC;
+Executing (default): INSERT INTO `pergunta` (`id`,`titulo`,`descricao`,`empresa`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?);
+Executing (default): SELECT `id`, `titulo`, `descricao`, `empresa`, `createdAt`, `updatedAt` FROM `pergunta` AS `pergunta` ORDER BY `pergunta`.`id` DESC;
+Executing (default): SELECT `id`, `titulo`, `descricao`, `empresa`, `createdAt`, `updatedAt` FROM `pergunta` AS `pergunta` ORDER BY `pergunta`.`id` DESC;
+Executing (default): SELECT `id`, `titulo`, `descricao`, `empresa`, `createdAt`, `updatedAt` FROM `pergunta` AS `pergunta` WHERE `pergunta`.`id` = '1';
+Executing (default): SELECT `id`, `corpo`, `pergunta_id`, `createdAt`, `updatedAt` FROM `resposta` AS `resposta` WHERE `resposta`.`pergunta_id` = 1 ORDER BY `resposta`.`id` DESC;
+Executing (default): SELECT `id`, `titulo`, `descricao`, `empresa`, `createdAt`, `updatedAt` FROM `pergunta` AS `pergunta` ORDER BY `pergunta`.`id` DESC;
